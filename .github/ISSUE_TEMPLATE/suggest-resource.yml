@@ -1,0 +1,23 @@
+name: Suggest a resource
+description: Propose a project, community, API or other resource for the list
+labels: ["suggestion"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      placeholder: e.g. Turkish NLP
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it useful for developers in Türkiye?
+    validations:
+      required: true
